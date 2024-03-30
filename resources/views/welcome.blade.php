@@ -11,7 +11,7 @@
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:text-center">
                 <h2 class="text-base font-semibold leading-7 text-indigo-600">
-                    Gerador de Atas
+                    GERADOR DE ATAS
                 </h2>
                 <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Crie agora uma ata para sua reunião
@@ -75,7 +75,7 @@
                         Agora chega de perder tempo criando documentos. Já pode aumentar a agenda de reuniões da equipe, hein.
                     </p>
                     <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                        <a href="#" class="rounded-md bg-white px-12 py-4 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">COMEÇAR AGORA <span aria-hidden="true">→</span> </a>
+                        <a href="./form" class="rounded-md bg-white px-12 py-4 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">COMEÇAR AGORA <span aria-hidden="true">→</span> </a>
                     </div>
                 </div>
                 <div class="relative mt-16 h-80 lg:mt-8">
