@@ -12,3 +12,7 @@ Route::get('/form', function () {
 });
 
 Route::get('send-email-pdf', [PDFController::class, 'index']);
+
+Route::get('/ata', function () {
+    return view('ata');
+});
