@@ -10,38 +10,38 @@
 
       <div class="border-t border-gray-900/10 mt-10 grid grid-cols-6 gap-x-6 gap-y-8">
         <div class="sm:col-span-4 mt-10">
-          <label for="name" class="block text-sm font-medium leading-6 text-gray-900">
+          <label for="tittle" class="block text-sm font-medium leading-6 text-gray-900">
             Título
           </label>
           <div class="mt-2">
             <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-              <input type="text" name="título" id="name" autocomplete="username" class="block flex-1 border-0 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Título da reunião">
+              <input type="text" name="título" id="tittle" autocomplete="username" class="block flex-1 border-0 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Título da reunião">
             </div>
           </div>
         </div>
 
         <div class="col-span-full">
-          <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Data</label>
+          <label for="data" class="block text-sm font-medium leading-6 text-gray-900">Data</label>
           <div class="block border-2 rounded-md bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 w-40 mt-2">
-            <input type="date">
+            <input type="date" id="data">
           </div>
         </div>
 
         <div class="flex center items-center space-x-2">
           <div>
-            <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Horário de Início</label>
-            <input type="time" class="block border-2 rounded-md bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 w-40 mt-2">
+            <label for="hourInit" class="block text-sm font-medium leading-6 text-gray-900">Horário de Início</label>
+            <input type="time" id="hourInit" class="block border-2 rounded-md bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 w-40 mt-2">
           </div>
           <div>
-            <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Horário de Término</label>
-            <input type="time" class="block border-2 rounded-md bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 w-40 mt-2">
+            <label for="hourFinal" class="block text-sm font-medium leading-6 text-gray-900">Horário de Término</label>
+            <input type="time" id="hourFinal" class="block border-2 rounded-md bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 w-40 mt-2">
           </div>
         </div>
 
         <div class="col-span-full">
-          <label for="responsável" class="block text-sm font-medium leading-6 text-gray-900 mb-2">Reunião convocada a pedido de:</label>
+          <label for="resp" class="block text-sm font-medium leading-6 text-gray-900 mb-2">Reunião convocada a pedido de:</label>
           <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-            <input type="text" id="responsável" class="block flex-1 border-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Seu nome">
+            <input type="text" id="resp" class="block flex-1 border-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Seu nome">
           </div>
           <p class="mt-3 text-sm leading-6 text-gray-600">Neste campo, você precisa informar o responsável pela reunião.</p>
         </div>
@@ -54,33 +54,33 @@
         </div>
 
         <div class="col-span-full">
-          <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Resumo da reunião</label>
+          <label for="resumo" class="block text-sm font-medium leading-6 text-gray-900">Resumo da reunião</label>
           <div class="mt-2">
-            <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Aqui você pode descrever de forma resumida o assunto da sua reunião. Fique à vontade."></textarea>
+            <textarea id="resumo" name="about" rows="3" class="block w-full rounded-md border-0 pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Aqui você pode descrever de forma resumida o assunto da sua reunião. Fique à vontade."></textarea>
           </div>
         </div>
 
         <div class="col-span-full">
-          <label for="resumo" class="block text-sm font-medium leading-6 text-gray-900">Pautas:</label>
+          <label for="pautas" class="block text-sm font-medium leading-6 text-gray-900">Pautas:</label>
           <div class="mt-2">
-            <input type="text" id="pauta" placeholder="Descreva os tópicos comentados na reunião. Para cada tópico, clique em Adicionar." class="border-2 py-1.5 pl-3 w-full text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6">
+            <input type="text" id="pautas" placeholder="Descreva os tópicos comentados na reunião. Para cada tópico, clique em Adicionar." class="border-2 py-1.5 pl-3 w-full text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6">
           </div>
           <button onclick="criarCaixaPersonalizada2()" type="button" class="bg-indigo-600 px-8 py-1.5 mt-2 text-white rounded-sm">Adicionar</button>
           <div id="caixaPersonalizada2" class="gap-2 mt-2"></div>
         </div>
 
         <div class="col-span-full">
-          <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Demandas pendentes</label>
+          <label for="demandas" class="block text-sm font-medium leading-6 text-gray-900">Demandas pendentes</label>
           <div class="mt-2">
-            <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+            <textarea id="demandas" name="about" rows="3" class="block w-full rounded-md border-0 pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
           </div>
           <p class="mt-3 text-sm leading-6 text-gray-600">Descreva as demandas pendentes que foram citadas na reunião.</p>
         </div>
 
         <div class="col-span-full">
-          <label for="decisões" class="block text-sm font-medium leading-6 text-gray-900">Tomadas de decisão</label>
+          <label for="decision" class="block text-sm font-medium leading-6 text-gray-900">Tomadas de decisão</label>
           <div class="mt-2">
-            <textarea id="decisões" name="about" rows="2" class="block w-full rounded-md border-0 pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Decidiram algo? Pode informar aqui."></textarea>
+            <textarea id="decision" name="about" rows="2" class="block w-full rounded-md border-0 pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Decidiram algo? Pode informar aqui."></textarea>
           </div>
         </div>
 
@@ -88,18 +88,18 @@
           <label for="agend" class="block text-sm font-medium leading-6 text-gray-900">Agendamento da próxima reunião</label>
           <div>
             <div class="block border-2 rounded-md bg-transparent py-1.5 pl-6 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 w-60 mt-2">
-              <input type="datetime-local">
+              <input type="datetime-local" id="agend">
             </div>
           </div>
         </div>
 
         <div class="col-span-full mb-0">
-          <label for="nome" class="block text-sm font-medium leading-6 text-gray-900">Área destinada à assinatura do responsável pela ata</label>
+          <label for="assinaturaNome" class="block text-sm font-medium leading-6 text-gray-900">Área destinada à assinatura do responsável pela ata</label>
           <div class="mt-2 flex items-center gap-x-3">
             <svg class="h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
             </svg>
-            <input type="text" class="rounded-md bg-white px-2.5 py-1.5 text-sm font-normal w-96 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Seu nome"></input>
+            <input type="text" id="assinaturaNome" class="rounded-md bg-white px-2.5 py-1.5 text-sm font-normal w-96 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Seu nome"></input>
           </div>
         </div>
 
@@ -122,15 +122,12 @@
           </div>
         </div>
       </div>
-
-
     </div>
 
     <div class="mt-0 flex items-center justify-end gap-x-6">
-      <!-- <button type="button" class="text-lg font-semibold leading-6 text-gray-900"><a href="./">Voltar</a></button> -->
+      <button type="button" class="text-lg font-semibold leading-6 text-gray-900"><a href="./">Voltar</a></button>
       <!-- <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"><a href="./ata">Enviar</a></button> -->
-
-      <button type="submit">Enviar</button>
+      <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enviar</button>
     </div>
   </div>
   </div>
