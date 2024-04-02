@@ -1,7 +1,8 @@
 @extends('main')
 
 @section('content')
-<form action="">
+<form action="{{route('pdf.create')}}" method="post">
+  @csrf
   <div class="space-y-12 px-64 py-16 sm:mx-32">
     <div class="border-b border-gray-900/10 pb-8">
       <h2 class="text-4xl font-semibold leading-10 text-indigo-600">ATA DA REUNIÃO</h2>
@@ -127,8 +128,10 @@
     </div>
 
     <div class="mt-0 flex items-center justify-end gap-x-6">
-      <button type="button" class="text-lg font-semibold leading-6 text-gray-900">Voltar</button>
-      <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"><a href="./ata">Enviar</a></button>
+      <!-- <button type="button" class="text-lg font-semibold leading-6 text-gray-900"><a href="./">Voltar</a></button> -->
+      <!-- <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"><a href="./ata">Enviar</a></button> -->
+
+      <button type="submit">Enviar</button>
     </div>
   </div>
   </div>

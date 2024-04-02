@@ -28,7 +28,9 @@ function criarCaixaPersonalizada3(event) {
     const emailAdress = inputEmail;
     const caixaPersonalizada3 = document.getElementById("caixaPersonalizada3");
 
-    caixaPersonalizada3.innerHTML += `<div class="bg-blue-400 rounded-xl flex columns-auto items-center gap-2 text-white p-2 mt-2 w-fit"><span>${emailAdress}</span> 
+    caixaPersonalizada3.innerHTML += `<div class="bg-blue-400 rounded-xl flex items-center gap-2 text-white p-1 w-fit"><span>${emailAdress}</span> 
     <button onclick="#" class="bg-white/30 rounded-full h-4 p-1 pb-2 flex justify-center items-center">x</button>
     </div>`;
+
+    document.getElementById("emailAddress").value = '';
 }

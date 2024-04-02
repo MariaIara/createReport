@@ -12,6 +12,7 @@ Route::get('/form', function () {
 });
 
 Route::get('send-email-pdf', [PDFController::class, 'index']);
+Route::post('/create-pdf', [PDFController::class, 'create'])->name('pdf.create');
 
 Route::get('/ata', function () {
     return view('ata');

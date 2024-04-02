@@ -28,5 +28,9 @@ class PDFController extends Controller
     
         return dd('Mail sent successfully');
     }
+
+    public function create(Request $request) {
+        dd($request);
+    }
        
 }
